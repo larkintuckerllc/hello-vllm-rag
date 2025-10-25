@@ -30,7 +30,6 @@ def main():
     )
     agent = create_agent(
         model=llm,
-        tools=[],
         middleware=[prompt_with_context]
     )
     result = agent.invoke(
