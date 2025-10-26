@@ -6,7 +6,7 @@ from langchain_ollama import OllamaEmbeddings
 
 
 def main():
-    embeddings = OllamaEmbeddings(model="llama3")
+    embeddings = OllamaEmbeddings(model="qwen3-embedding:0.6b")
     vector_store = Chroma(
         collection_name="example_collection",
         embedding_function=embeddings,

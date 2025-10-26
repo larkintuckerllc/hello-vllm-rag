@@ -13,7 +13,7 @@ def main():
         add_start_index=True
     )
     all_splits = text_splitter.split_documents(documents)
-    embeddings = OllamaEmbeddings(model="llama3")
+    embeddings = OllamaEmbeddings(model="qwen3-embedding:0.6b")
     vector_store = Chroma(
         collection_name="example_collection",
         embedding_function=embeddings,
